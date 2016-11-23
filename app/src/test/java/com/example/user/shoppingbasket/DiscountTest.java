@@ -34,7 +34,7 @@ public class DiscountTest {
         shoppingBasket.addItemToBasket(i2);
         shoppingBasket.addItemToBasket(i2);
         shoppingBasket.addItemToBasket(i2);
-        assertEquals(5, shoppingBasket.getBasket().size());
+        assertEquals(9, shoppingBasket.getBasket().size());
         assertEquals(8.70, discount.bogof(shoppingBasket));
     }
 
