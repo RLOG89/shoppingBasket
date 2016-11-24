@@ -15,7 +15,7 @@ public class ItemTest {
 
     @Before
     public void before() {
-         i = new Item("chicken", 4.50);
+         i = new Item("chicken", 4.50, true);
     }
 
     @Test
@@ -26,5 +26,10 @@ public class ItemTest {
     @Test
     public void itemHasPrice() {
         assertEquals(4.50, i.getPrice());
+    }
+
+    @Test
+    public void itemIsInBogofDeal() {
+        assertEquals(true, i.isBogof());
     }
 }
